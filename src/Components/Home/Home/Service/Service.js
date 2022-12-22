@@ -7,12 +7,12 @@ const Service = ({ service }) => {
   return (
     <Col className="my-3">
       <Card>
-        <Card.Img variant="top" src={img} />
+        <Card.Img variant="top" style={{ height: '350px' }} src={img} />
         <Card.Body>
           <Card.Title>{name}  </Card.Title>
           <Card.Text>
-            <h4>Price: {price} Rupee {type} </h4>
-            <Link to={`/services/${name}`} ><Button> See Details </Button></Link>
+            <h4>Price: {price} ₹  </h4>
+            <Link to={`/services/${name}`} ><Button> More Information </Button></Link>
           </Card.Text>
         </Card.Body>
       </Card>

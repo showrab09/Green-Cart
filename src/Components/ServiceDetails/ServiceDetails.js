@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
+import { Button, Card, Col } from 'react-bootstrap';
+
 
 const ServiceDetails = () => {
     const { sname } = useParams();
@@ -24,8 +26,8 @@ const ServiceDetails = () => {
 
             <p className="w-50">{des} </p>
             <h4 className="text-danger">Payment: {price} INR </h4>
-            <p>Payment Type: {type}</p>
-            <button>Add to Cart</button>
+            <p>Product Type : {type}</p>
+            <Button variant="warning" size="lg">Add to Cart</Button>
 
         </div>
     );
